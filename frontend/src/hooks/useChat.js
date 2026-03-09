@@ -1,7 +1,6 @@
 import { useState, useCallback, useRef } from "react";
 
-const API_URL = "http://localhost:3001";
-
+const API_URL = import.meta.env.VITE_API_URL || "https://neuralchat-multi-agent-1.onrender.com";
 /**
  * useChat — manages chat history and agent pipeline streaming
  */
